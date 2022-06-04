@@ -24,10 +24,9 @@ function enviarGastos(nombre, gasto) {
     }
 };
 
-/* Defino otra funcion para el boton enviar */
 function imprimirGastos() {
     let suma= 0;
-    let division=0;
+    let division= 0;
     document.getElementById("listado").innerHTML ="";
     for(let value of miListado){
         document.getElementById("listado").innerHTML += '<li class="list-group-item">'+value.nombre+" : $"+value.gasto+'</li>';
